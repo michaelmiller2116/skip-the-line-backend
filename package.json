@@ -1,0 +1,22 @@
+{
+  "name": "skip-the-line",
+  "version": "1.0.0",
+  "description": "Shopping app that allows the user to skip the lines by checking out with their phone",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Miller",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
