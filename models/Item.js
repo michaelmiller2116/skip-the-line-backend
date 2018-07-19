@@ -5,23 +5,23 @@ const Schema = mongoose.Schema
 const ItemSchema = new Schema({
   title: {
     type: String,
-    required: false
+    required: true
   },
   size: {
     type: String,
-    required: false
+    required: true
   },
   price: {
     type: Number,
-    required: false
+    required: true
   },
   img: {
     type: String,
-    required: false
+    required: true
   },
   description: {
     type: String,
-    required: false
+    required: true
   },
   date: {
     type: Date,
