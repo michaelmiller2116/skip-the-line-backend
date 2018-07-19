@@ -2,8 +2,24 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 //Create Schema
-const ItemSchema = new Schema ({
-  name: {
+const ItemSchema = new Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  size: {
+    type: String,
+    required: false
+  },
+  price: {
+    type: Number,
+    required: true
+  },
+  img: {
+    type: String,
+    required: true
+  },
+  description: {
     type: String,
     required: true
   },
@@ -11,6 +27,6 @@ const ItemSchema = new Schema ({
     type: Date,
     default: Date.now
   }
-})
+});
 
 module.exports = Item = mongoose.model('item', ItemSchema)
